@@ -1,3 +1,5 @@
+package kotlinBasics
+
 /** Here are some examples of conditional statements on Kotlin.
  * @since 10/02/2024
  * */

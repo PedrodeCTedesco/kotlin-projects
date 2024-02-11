@@ -1,3 +1,5 @@
+package kotlinBasics
+
 /** This is for the data types on Kotlin
  * @since 10/02/2024
  * */

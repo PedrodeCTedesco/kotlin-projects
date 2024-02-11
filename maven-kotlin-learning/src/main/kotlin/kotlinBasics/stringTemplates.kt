@@ -1,3 +1,5 @@
+package kotlinBasics
+
 /** Just to show the string templates.
  * Definition: A string template is a programmatic wat to generate a String.
  * @since 10/02/2024
