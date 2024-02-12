@@ -12,7 +12,7 @@
  * @since 10/02/2024
  * */
 
-package org.conductor.objectsInKotlin
+package org.conductor.objectsInKotlin.constructorsBasicsImmutableAndMutableObj
 
 fun main()
 {

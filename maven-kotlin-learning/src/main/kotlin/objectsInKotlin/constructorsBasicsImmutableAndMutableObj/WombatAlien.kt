@@ -6,7 +6,7 @@
  * @see "Atomic Kotlin"
  * */
 
-package org.conductor.objectsInKotlin
+package org.conductor.objectsInKotlin.constructorsBasicsImmutableAndMutableObj
 
 class Wombat
 {

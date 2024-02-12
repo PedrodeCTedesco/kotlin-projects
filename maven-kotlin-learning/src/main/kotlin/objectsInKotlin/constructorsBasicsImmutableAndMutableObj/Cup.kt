@@ -1,4 +1,4 @@
-package org.conductor.objectsInKotlin
+package org.conductor.objectsInKotlin.constructorsBasicsImmutableAndMutableObj
 
 class Cup
 {

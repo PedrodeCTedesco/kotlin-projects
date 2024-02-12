@@ -4,7 +4,7 @@
  * @see "Atomic Kotlin"
  * */
 
-package org.conductor.objectsInKotlin
+package org.conductor.objectsInKotlin.constructorsBasicsImmutableAndMutableObj
 
 //We just use a keyword class followed by te identifier
 class Giraffe;
