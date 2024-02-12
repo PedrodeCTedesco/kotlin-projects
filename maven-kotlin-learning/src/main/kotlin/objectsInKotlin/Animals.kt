@@ -1,5 +1,7 @@
 /** This is an example of a class in Kotlin.
+ * @author pedro de castro tedesco
  * @since 10/02/2024
+ * @see "Atomic Kotlin"
  * */
 
 package org.conductor.objectsInKotlin
@@ -43,4 +45,11 @@ fun main()
 
     val hamster = Hamster();
     println(hamster.exercise());
+
+    /** Remember that var and val control references rather than objects. A var allows you to rebind
+     * a reference and a val prevents you from doing so.
+     *
+     * The term 'mutability' means that an object can change its state. In the examples, class House
+     * and class Kitchen are mutable, and class Sofa (with a val property) is immutable.
+     * */
 };//end of main();
