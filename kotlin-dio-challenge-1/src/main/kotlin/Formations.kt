@@ -11,16 +11,38 @@ class Formations (
     private val level: Int,
     private val educationalContent: EducationalContents,
     private val stacks: ArrayList<String>
-)
-{
+) {
     //Client member functions
-    public fun getName(): String = name;
+    private fun getName(): String = name;
 
-    public fun getLevel(): Int = level;
+    private fun getLevel(): Int = level;
 
-    override public fun toString(): String
+    private fun getEducationalContents(): EducationalContents {
+        return educationalContent;
+    };//end of getEducationalContents()
+
+    private fun getStacks(): String
+    {
+        //same logic of getEducationalContents()
+        val builder = StringBuilder();
+        val lastIndex = stacks.size - 1;
+
+        for ((index, stk) in stacks.withIndex())
+        {
+            builder.append(stk)
+            if (index < lastIndex)
+                builder.append(", ")
+            else
+                builder.append(".")
+        };//end of for loop
+        return builder.toString()
+    };//end of getStacks()
+
+    override fun toString(): String
     {
         return String.format(
-            "Course name: $name%nLevel: $level%nEducational contents: <>%nFor the following stacks:<>");
+            "Course name: ${getName()}%nLevel: ${getLevel()}. " +
+                    "We teach our course to the following stacks: ${getStacks()}" +
+                    "%nEducational contents: ${getEducationalContents()}%n");
     };//end of toString()
 };//end of Formations class

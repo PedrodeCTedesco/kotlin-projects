@@ -15,10 +15,27 @@ fun main() {
     val educationalContents = arrayListOf<String>();
     educationalContents.addAll(listOf("Backend", "Frontend", "ORM", "Database"));
 
+    //Creates the educationContents object
     val educationalContentsObj: EducationalContents = EducationalContents(
         true,
         educationalContents);
 
-    println("Are we accepting new students: " + educationalContentsObj.acceptingNewStudents());
-    println(educationalContentsObj.showEducationalContents());
+    //testing the client member functions
+    println(educationalContentsObj);
+
+    educationalContentsObj.toggleAcceptingNewStudents();
+    println(educationalContentsObj);
+
+    //Testing the Formations class
+    val stacks: ArrayList<String> = arrayListOf("Kotlin", "Unit Testing", "Agile methods");
+
+    val formations: Formations = Formations(
+        "Kotlin roadmap",
+        1,
+        educationalContentsObj,
+        stacks
+    );
+
+    //Testing the client member functions
+    println(formations);
 };//end of main()
